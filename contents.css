@@ -1,0 +1,57 @@
+.ymaps {
+    padding: 8px;
+    margin: 10px;
+    background: #eee;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px #fff inset, 0 -1px 0px #ccc inset;
+}
+
+.ymaps:before,
+.ymaps:after {
+    content: " ";
+    display: table;
+}
+.ymaps:after {
+    clear: both;
+}
+
+.ymaps > .ymaps-text,
+.ymaps > .ymaps-map {
+    float: left;
+    box-sizing: border-box;
+}
+
+.ymaps > .ymaps-text {
+    box-shadow: 0 1px 1px #ddd inset;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.ymaps > .ymaps-map:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 97%;
+    height: 100%;
+    background: url('bg.jpg');
+}
+
+.col-md-4,
+.col-md-8 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-md-4 {
+    width: 33.33333333%;
+}
+
+.col-md-8 {
+    width: 66.66666667%;
+}
